@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="text-5xl font-bold">Bé tập tính</p>
+    
+
+    <div class="grid grid-cols-[100px_200px_50px_50px] mt-9 p-5 gap-4">
+
+        <div class="font-semibold" id="Số thứ nhất" name="Số thứ nhất">Số thứ nhất</div>
+        <div>  <input id="num1" placeholder="nhập số thứ 1" class="border border-black "> </div>
+        <div class="flex flex-row ml-8"> 
+            <input type="radio" name="chọn" id="Cộng">
+            <label for="Cộng">Cộng</label>
+        </div>
+        <div class="flex flex-row ml-8">
+            <input type="radio" name="chọn" id="Trừ" class="ml-3">
+            <label for="Trừ">Trừ</label>
+        </div>
+
+
+        <div class="font-semibold" id="Số thứ nhất" name="Số thứ hai">Số thứ hai</div>
+        <div> <input id="num2" placeholder="nhập số thứ 2" class="border border-black "> </div>
+        <div class="flex flex-row ml-8"> 
+            <input type="radio" name="chọn" id="Nhân">
+            <label for="Nhân">Nhân</label>
+        </div>
+        <div class="flex flex-row ml-8">
+            <input type="radio" name="chọn" id="Chia" class="ml-3">
+            <label for="Chia">Chia</label>
+        </div>
+
+
+        <div class="font-semibold">kết quả</div>
+        <div> <input id="ketqua" placeholder="kết quả" class="border border-black " readonly disabled> </div>
+        <div class="col-span-2 flex flex-row ml-8"> 
+            <input type="button" value=" Tính " name="tính" id="tính" class="bg-gray-300 border border-black px-2 hover:bg-green-700 cursor-pointer">
+        </div>
+        
+        <div class="font-semibold">Thông báo</div>
+        <div class="col-span-3">
+            <p type="text" name="thông_báo" id="thông_báo" class="text-red-600" readonly disabled></p>
+        </div>
+
+    </div>
+    
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
